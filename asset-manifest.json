@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/popovi-winery/static/css/main.37bfb788.chunk.css",
+    "main.js": "/popovi-winery/static/js/main.00fa4894.chunk.js",
+    "main.js.map": "/popovi-winery/static/js/main.00fa4894.chunk.js.map",
+    "runtime-main.js": "/popovi-winery/static/js/runtime-main.f273686e.js",
+    "runtime-main.js.map": "/popovi-winery/static/js/runtime-main.f273686e.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/popovi-winery/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.9d842f91.chunk.js": "/popovi-winery/static/js/2.9d842f91.chunk.js",
+    "static/js/2.9d842f91.chunk.js.map": "/popovi-winery/static/js/2.9d842f91.chunk.js.map",
+    "index.html": "/popovi-winery/index.html",
+    "precache-manifest.f1459af696de6d22a333032dc6627350.js": "/popovi-winery/precache-manifest.f1459af696de6d22a333032dc6627350.js",
+    "service-worker.js": "/popovi-winery/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/popovi-winery/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.37bfb788.chunk.css.map": "/popovi-winery/static/css/main.37bfb788.chunk.css.map",
+    "static/js/2.9d842f91.chunk.js.LICENSE.txt": "/popovi-winery/static/js/2.9d842f91.chunk.js.LICENSE.txt",
+    "static/media/awards2.png": "/popovi-winery/static/media/awards2.58745646.png",
+    "static/media/awards3.jpg": "/popovi-winery/static/media/awards3.1622287f.jpg",
+    "static/media/cabernet.jpg": "/popovi-winery/static/media/cabernet.3d821580.jpg",
+    "static/media/index.css": "/popovi-winery/static/media/third.a58623c1.jpg",
+    "static/media/header-bg-2.jpg": "/popovi-winery/static/media/header-bg-2.15556c6f.jpg",
+    "static/media/header-bg.jpg": "/popovi-winery/static/media/header-bg.ffb9af4e.jpg",
+    "static/media/logo-light.png": "/popovi-winery/static/media/logo-light.155f3ba1.png",
+    "static/media/logo.png": "/popovi-winery/static/media/logo.a4f14174.png",
+    "static/media/saem.jpg": "/popovi-winery/static/media/saem.0da25a05.jpg",
+    "static/media/temjanika.jpg": "/popovi-winery/static/media/temjanika.3fbb8d83.jpg",
+    "static/media/vranec1.jpg": "/popovi-winery/static/media/vranec1.5dce4eb2.jpg",
+    "static/media/vranec2.jpg": "/popovi-winery/static/media/vranec2.0cb76843.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f273686e.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.9d842f91.chunk.js",
+    "static/css/main.37bfb788.chunk.css",
+    "static/js/main.00fa4894.chunk.js"
+  ]
+}
