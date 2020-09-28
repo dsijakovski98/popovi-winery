@@ -16,21 +16,21 @@ function App() {
         <Header>
           <Navbar />
           <Route
-            path="/"
+            path="/popovi-winery"
             exact
             component={() => (
               <Slogan slogan='"One drop of wine is enough to redden a whole glass of water"' />
             )}
           />
           <Route
-            path="/products"
+            path="/popovi-winery/products"
             exact
             component={() => <Slogan slogan="Welcome to our products page" />}
           />
         </Header>
-        <Route path="/" exact component={WineCarousel} />
-        <Route path="/" exact component={MainContent} />
-        <Route path="/products" exact component={Products} />
+        <Route path="/" component={WineCarousel} />
+        <Route path="/" component={MainContent} />
+        <Route path="/products" strict exact component={Products} />
         <Footer />
       </MainRefProvider>
     </Router>

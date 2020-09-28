@@ -61,8 +61,11 @@ function Navbar() {
       {/* COMPANY LOGO */}
       <div className="company">
         <div className="company-title">
-          <Link to="/">
-            <img src={location === "/" ? darkLogo : lightLogo} alt="logo img" />
+          <Link to="/popovi-winery">
+            <img
+              src={location === "/popovi-winery" ? darkLogo : lightLogo}
+              alt="logo img"
+            />
           </Link>
         </div>
       </div>
@@ -71,34 +74,36 @@ function Navbar() {
       <div className="nav-links" ref={navLinksRef}>
         <div data-simplebar className="scrollbar" id="simp">
           <nav>
-            {/* <div className="blocker"></div> */}
             <ul>
               <li>
                 <Link
-                  to="/"
+                  to="/popovi-winery"
                   style={{
-                    color: location === "/" ? "#222" : "whitesmoke",
+                    color:
+                      location === "/popovi-winery" ? "#222" : "whitesmoke",
                   }}
                 >
                   Home
                 </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   onClick={() => scrollToElement(main)}
                   style={{
-                    color: location === "/" ? "#222" : "whitesmoke",
+                    color:
+                      location === "/popovi-winery" ? "#222" : "whitesmoke",
                   }}
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
                 <Link
-                  to="/products"
+                  to="/popovi-winery/products"
                   style={{
-                    color: location === "/" ? "#222" : "whitesmoke",
+                    color:
+                      location === "/popovi-winery" ? "#222" : "whitesmoke",
                   }}
                 >
                   Products
@@ -109,7 +114,8 @@ function Navbar() {
                   to="#"
                   onClick={() => scrollToElement(footer)}
                   style={{
-                    color: location === "/" ? "#222" : "whitesmoke",
+                    color:
+                      location === "/popovi-winery" ? "#222" : "whitesmoke",
                   }}
                 >
                   Contact
@@ -130,19 +136,22 @@ function Navbar() {
         <div
           className="line line1"
           style={{
-            backgroundColor: location === "/" ? "#222" : "whitesmoke",
+            backgroundColor:
+              location === "/popovi-winery" ? "#222" : "whitesmoke",
           }}
         ></div>
         <div
           className="line line2"
           style={{
-            backgroundColor: location === "/" ? "#222" : "whitesmoke",
+            backgroundColor:
+              location === "/popovi-winery" ? "#222" : "whitesmoke",
           }}
         ></div>
         <div
           className="line line3"
           style={{
-            backgroundColor: location === "/" ? "#222" : "whitesmoke",
+            backgroundColor:
+              location === "/popovi-winery" ? "#222" : "whitesmoke",
           }}
         ></div>
       </div>

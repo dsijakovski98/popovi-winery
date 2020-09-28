@@ -57,7 +57,7 @@ const Header = (props) => {
 
   return (
     <>
-      {location === "/" ? (
+      {location === "/popovi-winery" ? (
         <HomepageHeader>{props.children}</HomepageHeader>
       ) : (
         <ProductsHeader>{props.children}</ProductsHeader>
