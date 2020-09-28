@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/popovi-winery/static/css/main.37bfb788.chunk.css",
-    "main.js": "/popovi-winery/static/js/main.029aa8bf.chunk.js",
-    "main.js.map": "/popovi-winery/static/js/main.029aa8bf.chunk.js.map",
+    "main.css": "/popovi-winery/static/css/main.db55a6b8.chunk.css",
+    "main.js": "/popovi-winery/static/js/main.e051238f.chunk.js",
+    "main.js.map": "/popovi-winery/static/js/main.e051238f.chunk.js.map",
     "runtime-main.js": "/popovi-winery/static/js/runtime-main.f273686e.js",
     "runtime-main.js.map": "/popovi-winery/static/js/runtime-main.f273686e.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/popovi-winery/static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.9d842f91.chunk.js": "/popovi-winery/static/js/2.9d842f91.chunk.js",
     "static/js/2.9d842f91.chunk.js.map": "/popovi-winery/static/js/2.9d842f91.chunk.js.map",
     "index.html": "/popovi-winery/index.html",
-    "precache-manifest.ff0eb92eb0842657a8b8388332bfa6ed.js": "/popovi-winery/precache-manifest.ff0eb92eb0842657a8b8388332bfa6ed.js",
+    "precache-manifest.766de710f88e86e669db853db8e69f4a.js": "/popovi-winery/precache-manifest.766de710f88e86e669db853db8e69f4a.js",
     "service-worker.js": "/popovi-winery/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/popovi-winery/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.37bfb788.chunk.css.map": "/popovi-winery/static/css/main.37bfb788.chunk.css.map",
+    "static/css/main.db55a6b8.chunk.css.map": "/popovi-winery/static/css/main.db55a6b8.chunk.css.map",
     "static/js/2.9d842f91.chunk.js.LICENSE.txt": "/popovi-winery/static/js/2.9d842f91.chunk.js.LICENSE.txt",
     "static/media/awards2.png": "/popovi-winery/static/media/awards2.58745646.png",
     "static/media/awards3.jpg": "/popovi-winery/static/media/awards3.1622287f.jpg",
@@ -31,7 +31,7 @@
     "static/js/runtime-main.f273686e.js",
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.9d842f91.chunk.js",
-    "static/css/main.37bfb788.chunk.css",
-    "static/js/main.029aa8bf.chunk.js"
+    "static/css/main.db55a6b8.chunk.css",
+    "static/js/main.e051238f.chunk.js"
   ]
 }
