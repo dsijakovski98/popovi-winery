@@ -16,7 +16,7 @@ function App() {
         <Header>
           <Navbar />
           <Route
-            path="/popovi-winery"
+            path="/popovi-winery/"
             exact
             component={() => (
               <Slogan slogan='"One drop of wine is enough to redden a whole glass of water"' />
@@ -28,9 +28,9 @@ function App() {
             component={() => <Slogan slogan="Welcome to our products page" />}
           />
         </Header>
-        <Route path="/" component={WineCarousel} />
-        <Route path="/" component={MainContent} />
-        <Route path="/products" strict exact component={Products} />
+        <Route path="/popovi-winery/" component={WineCarousel} />
+        <Route path="/popovi-winery/" component={MainContent} />
+        <Route path="/popovi-winery/products" strict exact component={Products} />
         <Footer />
       </MainRefProvider>
     </Router>
