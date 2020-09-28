@@ -1,0 +1,101 @@
+.carousel-bg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: rgb(136, 141, 142);
+  background: radial-gradient(
+    circle,
+    rgba(136, 141, 142, 1) 7%,
+    rgba(98, 98, 98, 1) 26%,
+    rgba(23, 23, 23, 1) 86%
+  );
+}
+
+.carousel-wrap {
+  height: 100%;
+  margin: 0 auto;
+}
+
+.carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-img {
+  // margin-top: 3.5em;
+  opacity: 0.8;
+}
+
+.caption {
+  width: 50%;
+  margin-left: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+#root > div.carousel-bg > div > div {
+  display: flex;
+  align-items: center;
+}
+
+.carousel-inner {
+  margin: auto;
+}
+
+.caption-flex {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: left;
+
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    text-shadow: -2px 2px 1px black;
+    pointer-events: none;
+  }
+  a {
+    text-decoration: none;
+    padding-left: 0.5em;
+    font-size: 2rem;
+    text-shadow: -2px 2px 1px black;
+    color: $lightTextCol;
+    transform-origin: 0% 50%;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      text-decoration: underline;
+    }
+  }
+}
+
+.darken-img {
+  filter: brightness(85%);
+}
+
+.carousel-item {
+  transition: all 2s ease-in-out;
+}
+
+@media (max-width: $breakpoint1) {
+  .caption-flex {
+    h1 {
+      font-size: 2.5rem;
+    }
+    a {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: $breakpoint2) {
+  .caption-flex {
+    h1 {
+      font-size: 1.5rem;
+    }
+    a {
+      font-size: 1rem;
+    }
+  }
+}

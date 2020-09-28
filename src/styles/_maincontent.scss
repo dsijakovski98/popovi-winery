@@ -1,0 +1,73 @@
+.wrapper {
+  width: 100%;
+  background: radial-gradient(circle at left top, #aaa8a8, #e9e6e6);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  h1 {
+    color: $darkTextCol;
+    font-size: 3.5rem;
+    margin: 0.4em auto;
+  }
+}
+
+.story {
+  p {
+    color: $darkTextCol;
+    font-size: 1.1rem;
+  }
+}
+
+.italic-text {
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+#wine-cellar-popovi {
+  font-size: 1.3rem;
+}
+
+.pics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  padding: 2em 1em;
+
+  img {
+    height: 220px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: $breakpoint1) {
+  html {
+    font-size: 14px;
+  }
+
+  .pics {
+    all: unset;
+    width: 90%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+    padding: 2em 1em;
+  }
+}
+
+@media (max-width: $breakpoint2) {
+  .title h1 {
+    font-size: 2rem;
+  }
+  .story p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}

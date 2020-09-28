@@ -1,0 +1,204 @@
+footer {
+  padding-top: 1em;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1em 0;
+  color: $lightTextCol;
+
+  p {
+    margin-bottom: 1em;
+    font-size: 1rem;
+  }
+
+  form {
+    // margin-top: 0.7em;
+    display: flex;
+    // background: #000;
+
+    input {
+      padding: 0.2em 0.5em;
+      border: 1px solid whitesmoke;
+      border-radius: 5px;
+      margin-right: 1em;
+      background: $darkBgCol;
+      color: $lightTextCol;
+      &::placeholder {
+        color: $lightTextCol;
+      }
+    }
+
+    button {
+      padding: 0.3em 1.2em;
+      border: none;
+      border-radius: 5px;
+      background: royalblue;
+      color: $lightTextCol;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: $lightTextCol;
+        color: royalblue;
+      }
+    }
+  }
+}
+
+.form-flex {
+  // background: #000;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 90px;
+    margin-left: 2em;
+    // align-self: center;
+  }
+}
+
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  color: $lightTextCol;
+
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .address,
+  .location {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  .address-location * {
+    margin: 0;
+  }
+
+  .address-location p {
+    font-size: 1rem;
+  }
+
+  .address-location h6 {
+    font-size: 1.1rem;
+  }
+  img {
+    // background: #000;
+    display: block;
+    width: 32px;
+    margin-right: 0.5em;
+  }
+}
+
+.social-media {
+  // margin-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  .widget {
+    // background: red;
+    margin: 0 0.5em;
+    padding: 0 0.2em;
+    display: flex;
+    justify-content: center;
+  }
+
+  a {
+    // all: unset;
+    cursor: pointer;
+
+    &:hover {
+      color: transparent;
+    }
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.1em;
+    width: 32px;
+    // background: #000;
+  }
+  p {
+    font-size: 0.9rem;
+    color: $lightTextCol;
+
+    &:hover {
+      color: gray;
+    }
+  }
+}
+
+.copyrights {
+  border-top: 2px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 1em 0;
+
+  p {
+    margin-bottom: 0;
+    display: block;
+    text-align: center;
+    color: $lightTextCol;
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: $breakpoint1) {
+  html {
+    font-size: 14px;
+  }
+
+  .footer-grid {
+    all: unset;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .contact {
+    .subscribe-form {
+      margin-bottom: 1em;
+    }
+
+    .contact-info {
+      width: 120%;
+      flex-direction: row;
+    }
+  }
+}
+
+@media (max-width: $breakpoint2) {
+  .contact {
+    .contact-info {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+  }
+
+  .form-flex {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+    img {
+      display: none;
+    }
+  }
+}
