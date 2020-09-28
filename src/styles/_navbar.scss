@@ -1,5 +1,10 @@
 @import "./mixins";
 
+.header::after {
+  background-attachment: fixed;
+  // background-position: left;
+}
+
 .company {
   img {
     width: 100px;
@@ -130,15 +135,15 @@ nav {
 
   .nav-links {
     position: fixed;
-    right: -50%;
+    right: -100vw;
     top: 0px;
     width: 100vw;
     height: 105vh;
     background-color: #72727281;
-    transform: translateX(50vw);
     z-index: 1;
-    opacity: 0;
+    opacity: 1;
     transition: all 0.3s ease;
+    pointer-events: none;
   }
 
   nav {
@@ -198,9 +203,16 @@ nav {
   }
 }
 
+@media (max-width: $breakpoint2) {
+  .header::after {
+    background-attachment: scroll;
+  }
+}
+
 .nav-links-active {
+  pointer-events: all;
   opacity: 1;
-  transform: translateX(-48vw);
+  right: 0;
 }
 
 $x_offset: 4px;

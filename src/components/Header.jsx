@@ -8,7 +8,7 @@ import productsBg from "../images/header-bg.jpg";
 // const location = useLocation();
 const HomepageHeader = styled.div`
   & {
-    width: 100%;
+    width: 100vw;
     padding-top: 0.5em;
     height: 100vh;
     position: relative;
@@ -24,14 +24,13 @@ const HomepageHeader = styled.div`
     background-image: url(${homepageBg});
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     transform: scaleX(-1);
   }
 `;
 
 const ProductsHeader = styled.div`
   & {
-    width: 100%;
+    width: 100vw;
     padding-top: 0.5em;
     height: 100vh;
     position: relative;
@@ -47,7 +46,6 @@ const ProductsHeader = styled.div`
     background-image: url(${productsBg});
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     transform: scaleX(-1);
   }
 `;
@@ -58,9 +56,9 @@ const Header = (props) => {
   return (
     <>
       {location === "/popovi-winery/products" ? (
-        <ProductsHeader>{props.children}</ProductsHeader>
+        <ProductsHeader className="header">{props.children}</ProductsHeader>
       ) : (
-        <HomepageHeader>{props.children}</HomepageHeader>
+        <HomepageHeader className="header">{props.children}</HomepageHeader>
       )}
     </>
   );
