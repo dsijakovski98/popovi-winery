@@ -63,7 +63,9 @@ function Navbar() {
         <div className="company-title">
           <Link to="/popovi-winery">
             <img
-              src={location === "/popovi-winery" ? darkLogo : lightLogo}
+              src={
+                location === "/popovi-winery/products" ? lightLogo : darkLogo
+              }
               alt="logo img"
             />
           </Link>
@@ -80,7 +82,9 @@ function Navbar() {
                   to="/popovi-winery"
                   style={{
                     color:
-                      location === "/popovi-winery/" ? "#222" : "whitesmoke",
+                      location === "/popovi-winery/products"
+                        ? "whitesmoke"
+                        : "#222",
                   }}
                 >
                   Home
@@ -92,7 +96,9 @@ function Navbar() {
                   onClick={() => scrollToElement(main)}
                   style={{
                     color:
-                      location === "/popovi-winery/" ? "#222" : "whitesmoke",
+                      location === "/popovi-winery/products"
+                        ? "whitesmoke"
+                        : "#222",
                   }}
                 >
                   About Us
@@ -103,7 +109,9 @@ function Navbar() {
                   to="/popovi-winery/products"
                   style={{
                     color:
-                      location === "/popovi-winery/" ? "#222" : "whitesmoke",
+                      location === "/popovi-winery/products"
+                        ? "whitesmoke"
+                        : "#222",
                   }}
                 >
                   Products
@@ -115,7 +123,9 @@ function Navbar() {
                   onClick={() => scrollToElement(footer)}
                   style={{
                     color:
-                      location === "/popovi-winery/" ? "#222" : "whitesmoke",
+                      location === "/popovi-winery/products"
+                        ? "whitesmoke"
+                        : "#222",
                   }}
                 >
                   Contact
@@ -136,22 +146,22 @@ function Navbar() {
         <div
           className="line line1"
           style={{
-            backgroundColor:
-              location === "/popovi-winery" ? "#222" : "whitesmoke",
+            color:
+              location === "/popovi-winery/products" ? "whitesmoke" : "#222",
           }}
         ></div>
         <div
           className="line line2"
           style={{
-            backgroundColor:
-              location === "/popovi-winery" ? "#222" : "whitesmoke",
+            color:
+              location === "/popovi-winery/products" ? "whitesmoke" : "#222",
           }}
         ></div>
         <div
           className="line line3"
           style={{
-            backgroundColor:
-              location === "/popovi-winery" ? "#222" : "whitesmoke",
+            color:
+              location === "/popovi-winery/products" ? "whitesmoke" : "#222",
           }}
         ></div>
       </div>

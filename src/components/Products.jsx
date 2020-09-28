@@ -3,9 +3,9 @@ import React from "react";
 function Products() {
   return (
     <div className="products-page">
-      <div className="product product1">
+      <div className="product product1" data-aos="fade-up">
         <div className="body">
-          <h1>Vranec Barrique</h1>
+          <h1 data-aos="fade-down">Vranec Barrique</h1>
           <p>
             Red dry wine Vintage2018. Yeast in Macedonian barrel for 4 months
             and 8 more in Serbian one. It has dark rubin color and taste of sour
@@ -17,9 +17,9 @@ function Products() {
         </div>
       </div>
 
-      <div className="product product2">
+      <div className="product product2" data-aos="fade-down">
         <div className="body">
-          <h1>Temjanika</h1>
+          <h1 data-aos="fade-up">Temjanika</h1>
           <p>
             White dry wine Controled yeast- 18 days on 13-14 C Layed out in inox
             barrel for 60 days The aroma of Temjanika is very attractive and
@@ -30,9 +30,9 @@ function Products() {
         </div>
       </div>
 
-      <div className="product product3">
+      <div className="product product3" data-aos="fade-up">
         <div className="body">
-          <h1>Chardonnay special</h1>
+          <h1 data-aos="fade-down">Chardonnay special</h1>
           <p>
             White dry wine with intensive yellowish and green nuance Yeast in
             inox barrel for 25 days on 16C It has complex aroma : pineapple,
@@ -43,9 +43,9 @@ function Products() {
         </div>
       </div>
 
-      <div className="product product4">
+      <div className="product product4" data-aos="fade-down">
         <div className="body">
-          <h1>Vranec</h1>
+          <h1 data-aos="fade-up">Vranec</h1>
           <p>
             Vintage: 2019 Vranec is dry red wine with deep red color and has
             taste like fruit jam with intense note of berries and red fruit.
@@ -56,9 +56,9 @@ function Products() {
         </div>
       </div>
 
-      <div className="product product5">
+      <div className="product product5" data-aos="fade-up">
         <div className="body">
-          <h1>Cabernet Sauvignon</h1>
+          <h1 data-aos="fade-down">Cabernet Sauvignon</h1>
           <p>
             Vintage September 2019 Controlled yeast for 15 days on temperature
             of 22-25 C It is quality red wine , with brilliant ruby color and

@@ -1,14 +1,17 @@
 .products-page {
-  padding-left: 1.5em;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 40px;
+  place-items: center;
 }
 
 .product {
+  background: #000;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  // margin: 0 auto;
 }
 
 .body {
@@ -45,15 +48,21 @@
   }
 }
 
-@media (max-width: $breakpoint2) {
+@media (max-width: $breakpoint2 + 100px) {
   .body {
     width: 100%;
     text-align: center;
     transform: translateX(0);
-    padding: 13em 0;
+    padding: 13em 2em;
+    background-color: rgba(0, 0, 0, 0.2);
 
-    h1 {
-      text-shadow: -1px 1px 1px white;
+    h1,
+    p {
+      color: whitesmoke;
+      text-shadow: -1px 1px 1px rgb(0, 0, 0);
+    }
+    p {
+      font-weight: 400;
     }
   }
 }
