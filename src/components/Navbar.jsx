@@ -80,7 +80,7 @@ function Navbar() {
                   to="/popovi-winery"
                   style={{
                     color:
-                      location === "/popovi-winery" ? "#222" : "whitesmoke",
+                      location === "/popovi-winery/" ? "#222" : "whitesmoke",
                   }}
                 >
                   Home
@@ -92,7 +92,7 @@ function Navbar() {
                   onClick={() => scrollToElement(main)}
                   style={{
                     color:
-                      location === "/popovi-winery" ? "#222" : "whitesmoke",
+                      location === "/popovi-winery/" ? "#222" : "whitesmoke",
                   }}
                 >
                   About Us
@@ -103,7 +103,7 @@ function Navbar() {
                   to="/popovi-winery/products"
                   style={{
                     color:
-                      location === "/popovi-winery" ? "#222" : "whitesmoke",
+                      location === "/popovi-winery/" ? "#222" : "whitesmoke",
                   }}
                 >
                   Products
@@ -115,7 +115,7 @@ function Navbar() {
                   onClick={() => scrollToElement(footer)}
                   style={{
                     color:
-                      location === "/popovi-winery" ? "#222" : "whitesmoke",
+                      location === "/popovi-winery/" ? "#222" : "whitesmoke",
                   }}
                 >
                   Contact

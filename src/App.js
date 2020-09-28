@@ -28,9 +28,14 @@ function App() {
             component={() => <Slogan slogan="Welcome to our products page" />}
           />
         </Header>
-        <Route path="/popovi-winery/" component={WineCarousel} />
-        <Route path="/popovi-winery/" component={MainContent} />
-        <Route path="/popovi-winery/products" strict exact component={Products} />
+        <Route path="/popovi-winery/" exact component={WineCarousel} />
+        <Route path="/popovi-winery/" exact component={MainContent} />
+        <Route
+          path="/popovi-winery/products"
+          strict
+          exact
+          component={Products}
+        />
         <Footer />
       </MainRefProvider>
     </Router>
