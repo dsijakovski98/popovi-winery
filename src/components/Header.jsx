@@ -18,12 +18,12 @@ const HomepageHeader = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: inherit;
     z-index: -1;
-    background-image: url(${homepageBg});
+    background: url(${homepageBg}) no-repeat center center;
+    overflow: hidden;
+    background-attachment: fixed;
     background-size: cover;
-    object-fit: cover;
-    background-repeat: no-repeat;
     transform: scaleX(-1);
   }
 `;
@@ -40,13 +40,13 @@ const ProductsHeader = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: inherit;
     z-index: -1;
-    background-image: url(${productsBg});
+    background: url(${productsBg}) no-repeat;
+    overflow: hidden;
+    background-attachment: fixed;
     background-size: cover;
     object-fit: cover;
-    background-repeat: no-repeat;
-    transform: scaleX(-1);
   }
 `;
 

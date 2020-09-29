@@ -261,13 +261,6 @@ nav a:hover {
   .quote-block .quote-flex {
     width: 70%;
   }
-  .header {
-    height: 75vh;
-  }
-  .header::after {
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
   .nav-links-active {
     right: -20vw;
   }

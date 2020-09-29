@@ -228,15 +228,6 @@ nav {
     }
   }
 
-  .header {
-    height: 75vh;
-  }
-
-  .header::after {
-    // background-attachment: scroll;
-    object-fit: cover;
-  }
-
   .nav-links-active {
     right: -20vw;
   }
