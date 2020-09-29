@@ -21,7 +21,6 @@ const HomepageHeader = styled.div`
     height: 100%;
     z-index: -1;
     background: url(${homepageBg}) no-repeat;
-    overflow: hidden;
     background-attachment: fixed;
     background-size: cover;
   }
@@ -42,7 +41,6 @@ const ProductsHeader = styled.div`
     height: inherit;
     z-index: -1;
     background: url(${productsBg}) no-repeat;
-    overflow: hidden;
     background-attachment: fixed;
     background-size: cover;
     object-fit: cover;
