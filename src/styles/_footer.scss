@@ -107,6 +107,7 @@ footer {
   // margin-top: 1em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  // background: #000;
 
   .widget {
     // background: red;
@@ -169,16 +170,26 @@ footer {
     all: unset;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    place-items: center;
+    align-content: center;
     justify-items: center;
+  }
+  .subscribe-form {
+    margin-bottom: 1em;
+
+    .form-flex {
+      // background: red;
+      margin: 0 auto;
+    }
   }
 
   .contact {
-    .subscribe-form {
-      margin-bottom: 1em;
-    }
-
     .contact-info {
-      width: 120%;
+      // background: #000;
+      width: 100%;
+      margin: 0 auto;
+      padding-right: 1.5em;
+      // text-align: center;
       flex-direction: row;
     }
   }

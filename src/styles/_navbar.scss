@@ -42,6 +42,7 @@ nav {
     font-size: 1.2rem;
     font-weight: 600;
     padding: 0.6em 0.5em;
+    z-index: 30;
     &:hover {
       color: inherit;
       text-decoration: none;
@@ -56,10 +57,9 @@ nav {
 .hamburger {
   width: 60px;
   height: 60px;
-  // transform: translateX(-10vw);
   cursor: pointer;
   display: none;
-  z-index: 2;
+  z-index: 4;
 }
 
 .line {
@@ -79,7 +79,7 @@ nav {
   justify-content: flex-start;
 
   .quote-flex {
-    width: 50%;
+    width: 55%;
     padding-right: 2em;
     transform: translateX(100px);
     display: flex;
@@ -144,7 +144,7 @@ nav {
     width: 100vw;
     height: 105vh;
     background-color: #72727281;
-    z-index: 1;
+    z-index: 2;
     opacity: 1;
     transition: all 0.3s ease;
     pointer-events: none;
@@ -208,12 +208,22 @@ nav {
 }
 
 @media (max-width: $breakpoint2) {
+  .quote-block {
+    .quote-flex {
+      width: 70%;
+    }
+  }
+
   .header {
-    height: 55vh;
+    height: 80vh;
   }
 
   .header::after {
     background-attachment: scroll;
+  }
+
+  .nav-links-active {
+    right: -20vw;
   }
 }
 
