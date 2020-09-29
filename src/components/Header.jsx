@@ -20,11 +20,10 @@ const HomepageHeader = styled.div`
     width: 100%;
     height: inherit;
     z-index: -1;
-    background: url(${homepageBg}) no-repeat center center;
+    background: url(${homepageBg}) no-repeat;
     overflow: hidden;
     background-attachment: fixed;
     background-size: cover;
-    transform: scaleX(-1);
   }
 `;
 
