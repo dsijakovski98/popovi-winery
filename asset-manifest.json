@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/popovi-winery/static/css/main.25e8c884.chunk.css",
-    "main.js": "/popovi-winery/static/js/main.67f41ead.chunk.js",
-    "main.js.map": "/popovi-winery/static/js/main.67f41ead.chunk.js.map",
+    "main.js": "/popovi-winery/static/js/main.ce4269c2.chunk.js",
+    "main.js.map": "/popovi-winery/static/js/main.ce4269c2.chunk.js.map",
     "runtime-main.js": "/popovi-winery/static/js/runtime-main.f273686e.js",
     "runtime-main.js.map": "/popovi-winery/static/js/runtime-main.f273686e.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/popovi-winery/static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.9d842f91.chunk.js": "/popovi-winery/static/js/2.9d842f91.chunk.js",
     "static/js/2.9d842f91.chunk.js.map": "/popovi-winery/static/js/2.9d842f91.chunk.js.map",
     "index.html": "/popovi-winery/index.html",
-    "precache-manifest.4223e39f3629d910d4ce5c732cbc3b72.js": "/popovi-winery/precache-manifest.4223e39f3629d910d4ce5c732cbc3b72.js",
+    "precache-manifest.403f89653b31c15ebee32a68d9d1e6d9.js": "/popovi-winery/precache-manifest.403f89653b31c15ebee32a68d9d1e6d9.js",
     "service-worker.js": "/popovi-winery/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/popovi-winery/static/css/2.d9ad5f5c.chunk.css.map",
     "static/css/main.25e8c884.chunk.css.map": "/popovi-winery/static/css/main.25e8c884.chunk.css.map",
@@ -32,6 +32,6 @@
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.9d842f91.chunk.js",
     "static/css/main.25e8c884.chunk.css",
-    "static/js/main.67f41ead.chunk.js"
+    "static/js/main.ce4269c2.chunk.js"
   ]
 }

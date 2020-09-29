@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/popovi-winery/precache-manifest.4223e39f3629d910d4ce5c732cbc3b72.js"
+  "/popovi-winery/precache-manifest.403f89653b31c15ebee32a68d9d1e6d9.js"
 );
 
 self.addEventListener('message', (event) => {
