@@ -233,7 +233,8 @@ nav {
   }
 
   .header::after {
-    background-attachment: scroll;
+    // background-attachment: scroll;
+    object-fit: cover;
   }
 
   .nav-links-active {

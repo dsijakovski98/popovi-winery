@@ -265,7 +265,8 @@ nav a:hover {
     height: 75vh;
   }
   .header::after {
-    background-attachment: scroll;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .nav-links-active {
     right: -20vw;
