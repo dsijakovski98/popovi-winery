@@ -10,7 +10,7 @@ import vranec2 from "../images/vranec2.jpg";
 function WineCarousel() {
   return (
     <div className="carousel-bg">
-      <div className="carousel-wrap" data-aos="fade-up">
+      <div className="carousel-wrap" data-aos="fade-in">
         <Carousel fade={true} interval={5000} className="fade-carousel">
           <Carousel.Item className="carousel-item">
             <img

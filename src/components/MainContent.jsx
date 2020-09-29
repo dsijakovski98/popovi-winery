@@ -7,7 +7,7 @@ import saem from "../images/pics/saem.jpg";
 function MainContent() {
   return (
     <div className="wrapper main-content">
-      <div className="container main-container " data-aos="fade-up">
+      <div className="container main-container " data-aos="fade-in">
         <div className="title">
           <h1>-Our story-</h1>
         </div>
