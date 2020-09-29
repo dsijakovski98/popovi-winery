@@ -18,7 +18,7 @@ function Footer() {
           <div
             className="subscribe-form"
             data-aos-duration="800"
-            data-aos="fade-right"
+            data-aos="fade-in"
           >
             <h2>Join our newsletter</h2>
             <p>
@@ -29,7 +29,7 @@ function Footer() {
               <img src={logo} alt="" />
             </div>
           </div>
-          <div className="contact" data-aos-duration="800" data-aos="fade-left">
+          <div className="contact" data-aos-duration="800" data-aos="fade-in">
             <div className="contact-info">
               <div className="address">
                 <img src={pin} alt="adress img" />

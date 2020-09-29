@@ -1,3 +1,7 @@
+.header {
+  height: 100vh;
+}
+
 .header::after {
   background-attachment: fixed;
 }
@@ -240,6 +244,9 @@ nav a:hover {
 }
 
 @media (max-width: 720px) {
+  .header {
+    height: 55vh;
+  }
   .header::after {
     background-attachment: scroll;
   }
@@ -862,10 +869,6 @@ footer {
   padding: 0%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-#root {
-  margin: 0 auto;
 }
 
 body {

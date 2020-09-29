@@ -8,9 +8,8 @@ import productsBg from "../images/header-bg.jpg";
 // const location = useLocation();
 const HomepageHeader = styled.div`
   & {
-    width: 100vw;
+    width: 100%;
     padding-top: 0.5em;
-    height: 100vh;
     position: relative;
   }
   &:after {
@@ -30,9 +29,8 @@ const HomepageHeader = styled.div`
 
 const ProductsHeader = styled.div`
   & {
-    width: 100vw;
+    width: 100%;
     padding-top: 0.5em;
-    height: 100vh;
     position: relative;
   }
   &:after {

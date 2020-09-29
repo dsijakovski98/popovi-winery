@@ -55,7 +55,7 @@ function MainContent() {
           <img
             src={saem}
             alt="aw4"
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-duration="1000"
           />
           <img
@@ -67,7 +67,7 @@ function MainContent() {
           <img
             src={award3}
             alt="aw2"
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-duration="1000"
           />
         </div>

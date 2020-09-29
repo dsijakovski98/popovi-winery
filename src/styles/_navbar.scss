@@ -1,5 +1,9 @@
 @import "./mixins";
 
+.header {
+  height: 100vh;
+}
+
 .header::after {
   background-attachment: fixed;
   // background-position: left;
@@ -204,6 +208,10 @@ nav {
 }
 
 @media (max-width: $breakpoint2) {
+  .header {
+    height: 55vh;
+  }
+
   .header::after {
     background-attachment: scroll;
   }
