@@ -11,7 +11,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // margin: 0 auto;
 }
 
 .body {
@@ -49,12 +48,16 @@
 }
 
 @media (max-width: $breakpoint2 + 100px) {
+  .product {
+    margin: 2em auto;
+    margin-bottom: 0;
+  }
   .body {
     width: 100%;
     text-align: center;
     transform: translateX(0);
-    padding: 13em 2em;
-    background-color: rgba(0, 0, 0, 0.2);
+    padding: 7em 2em;
+    // margin: 2em 3em;
 
     h1,
     p {

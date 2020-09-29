@@ -96,7 +96,6 @@ footer {
     font-size: 1.1rem;
   }
   img {
-    // background: #000;
     display: block;
     width: 32px;
     margin-right: 0.8em;
@@ -104,21 +103,18 @@ footer {
 }
 
 .social-media {
-  // margin-top: 1em;
+  // background: #000;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  // background: #000;
 
   .widget {
-    // background: red;
-    // margin: 0 0.5em;
     padding: 0 0.5em;
     display: flex;
     justify-content: center;
   }
 
   a {
-    // all: unset;
     cursor: pointer;
 
     &:hover {
@@ -131,7 +127,6 @@ footer {
     margin: 0 auto;
     margin-bottom: 0.1em;
     width: 32px;
-    // background: #000;
   }
   p {
     font-size: 0.9rem;
@@ -168,18 +163,25 @@ footer {
 
   .footer-grid {
     all: unset;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    place-items: center;
-    align-content: center;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .subscribe-form {
     margin-bottom: 1em;
 
     .form-flex {
-      // background: red;
       margin: 0 auto;
+
+      form {
+        input {
+          width: 60%;
+
+          &::placeholder {
+            font-size: 0.8rem;
+          }
+        }
+      }
     }
   }
 
@@ -196,11 +198,39 @@ footer {
 }
 
 @media (max-width: $breakpoint2) {
+  .subscribe-form {
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 0.7rem;
+    }
+    .form-flex {
+      form {
+        input {
+          &::placeholder {
+            font-size: 0.65rem;
+          }
+        }
+
+        button {
+          font-size: 0.7rem;
+          padding: 0 1.3em;
+        }
+      }
+    }
+  }
   .contact {
     .contact-info {
       flex-direction: column;
       width: 100%;
       align-items: center;
+
+      .address-location {
+        h6 {
+          font-size: 1rem;
+        }
+      }
     }
   }
 

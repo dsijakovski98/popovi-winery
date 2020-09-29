@@ -146,21 +146,21 @@ function Navbar() {
         <div
           className="line line1"
           style={{
-            color:
+            backgroundColor:
               location === "/popovi-winery/products" ? "whitesmoke" : "#222",
           }}
         ></div>
         <div
           className="line line2"
           style={{
-            color:
+            backgroundColor:
               location === "/popovi-winery/products" ? "whitesmoke" : "#222",
           }}
         ></div>
         <div
           className="line line3"
           style={{
-            color:
+            backgroundColor:
               location === "/popovi-winery/products" ? "whitesmoke" : "#222",
           }}
         ></div>

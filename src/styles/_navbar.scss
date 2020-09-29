@@ -119,8 +119,22 @@ nav {
   }
   .quote-block {
     .quote-flex {
+      width: 100%;
+      padding-right: 0;
       #quote {
         font-size: 2rem;
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint2 - 100px) {
+  html {
+    font-size: 11px;
+  }
+  .quote-block {
+    .quote-flex {
+      #quote {
+        font-size: 1.8rem;
       }
     }
   }

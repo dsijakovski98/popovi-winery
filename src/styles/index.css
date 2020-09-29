@@ -158,8 +158,21 @@ nav a:hover {
   html {
     font-size: 12px;
   }
+  .quote-block .quote-flex {
+    width: 100%;
+    padding-right: 0;
+  }
   .quote-block .quote-flex #quote {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 620px) {
+  html {
+    font-size: 11px;
+  }
+  .quote-block .quote-flex #quote {
+    font-size: 1.8rem;
   }
 }
 
@@ -341,10 +354,6 @@ nav a:hover {
   margin: 0 auto;
 }
 
-.carousel-img {
-  opacity: 1;
-}
-
 .caption {
   width: 50%;
   margin-left: 0;
@@ -354,15 +363,6 @@ nav a:hover {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-}
-
-#root > div.carousel-bg > div > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .carousel-inner {
@@ -582,13 +582,16 @@ nav a:hover {
 }
 
 @media (max-width: 820px) {
+  .product {
+    margin: 2em auto;
+    margin-bottom: 0;
+  }
   .body {
     width: 100%;
     text-align: center;
     -webkit-transform: translateX(0);
             transform: translateX(0);
-    padding: 13em 2em;
-    background-color: rgba(0, 0, 0, 0.2);
+    padding: 7em 2em;
   }
   .body h1,
   .body p {
@@ -754,6 +757,7 @@ footer {
 }
 
 .social-media {
+  margin: 0 auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -826,20 +830,37 @@ footer {
   }
   .footer-grid {
     all: unset;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    place-items: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    justify-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .subscribe-form {
     margin-bottom: 1em;
   }
   .subscribe-form .form-flex {
     margin: 0 auto;
+  }
+  .subscribe-form .form-flex form input {
+    width: 60%;
+  }
+  .subscribe-form .form-flex form input::-webkit-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .subscribe-form .form-flex form input:-ms-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .subscribe-form .form-flex form input::-ms-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .subscribe-form .form-flex form input::placeholder {
+    font-size: 0.8rem;
   }
   .contact .contact-info {
     width: 100%;
@@ -853,6 +874,28 @@ footer {
 }
 
 @media (max-width: 720px) {
+  .subscribe-form h2 {
+    font-size: 1.5rem;
+  }
+  .subscribe-form p {
+    font-size: 0.7rem;
+  }
+  .subscribe-form .form-flex form input::-webkit-input-placeholder {
+    font-size: 0.65rem;
+  }
+  .subscribe-form .form-flex form input:-ms-input-placeholder {
+    font-size: 0.65rem;
+  }
+  .subscribe-form .form-flex form input::-ms-input-placeholder {
+    font-size: 0.65rem;
+  }
+  .subscribe-form .form-flex form input::placeholder {
+    font-size: 0.65rem;
+  }
+  .subscribe-form .form-flex form button {
+    font-size: 0.7rem;
+    padding: 0 1.3em;
+  }
   .contact .contact-info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -862,6 +905,9 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .contact .contact-info .address-location h6 {
+    font-size: 1rem;
   }
   .form-flex {
     -webkit-box-orient: vertical;

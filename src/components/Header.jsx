@@ -22,6 +22,7 @@ const HomepageHeader = styled.div`
     z-index: -1;
     background-image: url(${homepageBg});
     background-size: cover;
+    object-fit: cover;
     background-repeat: no-repeat;
     transform: scaleX(-1);
   }
@@ -43,6 +44,7 @@ const ProductsHeader = styled.div`
     z-index: -1;
     background-image: url(${productsBg});
     background-size: cover;
+    object-fit: cover;
     background-repeat: no-repeat;
     transform: scaleX(-1);
   }
