@@ -18,7 +18,7 @@ const HomepageHeader = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    height: inherit;
+    height: 100%;
     z-index: -1;
     background: url(${homepageBg}) no-repeat;
     overflow: hidden;
