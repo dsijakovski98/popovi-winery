@@ -21,19 +21,35 @@ function WineCarousel() {
             <Carousel.Caption className="caption">
               <div className="caption-flex">
                 <h1>Temjanika</h1>
-                <Link to="/products">Learn more</Link>
+                <Link
+                  to={{
+                    pathname: "/popovi-winery/products",
+                    state: { productId: "temjanika" },
+                  }}
+                >
+                  Learn more
+                </Link>
               </div>
             </Carousel.Caption>
           </Carousel.Item>
+
           <Carousel.Item>
             <img className="d-block w-100 carousel-img" src={vranec1} alt="" />
             <Carousel.Caption className="caption">
               <div className="caption-flex">
                 <h1>Vranec</h1>
-                <Link to="/products">Learn more</Link>
+                <Link
+                  to={{
+                    pathname: "/popovi-winery/products",
+                    state: { productId: "vranec" },
+                  }}
+                >
+                  Learn more
+                </Link>
               </div>
             </Carousel.Caption>
           </Carousel.Item>
+
           <Carousel.Item>
             <img
               className="d-block w-100 carousel-img darken-img"
@@ -43,16 +59,31 @@ function WineCarousel() {
             <Carousel.Caption className="caption">
               <div className="caption-flex">
                 <h1>Cabernet Sauvignon</h1>
-                <Link to="/products">Learn more</Link>
+                <Link
+                  to={{
+                    pathname: "/popovi-winery/products",
+                    state: { productId: "cabernet-s" },
+                  }}
+                >
+                  Learn more
+                </Link>
               </div>
             </Carousel.Caption>
           </Carousel.Item>
+
           <Carousel.Item>
             <img className="d-block w-100 carousel-img" src={vranec2} alt="" />
             <Carousel.Caption className="caption">
               <div className="caption-flex">
                 <h1>Vranec Barrique</h1>
-                <Link to="/products">Learn more</Link>
+                <Link
+                  to={{
+                    pathname: "/popovi-winery/products",
+                    state: { productId: "vranec-b" },
+                  }}
+                >
+                  Learn more
+                </Link>
               </div>
             </Carousel.Caption>
           </Carousel.Item>

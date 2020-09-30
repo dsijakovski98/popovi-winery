@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function SubscribeForm() {
   const [email, setEmail] = useState("");
   return (
-    <form>
+    <form onSubmit={() => {}}>
       <input
         type="email"
         name="email"
@@ -11,7 +11,7 @@ function SubscribeForm() {
         onChange={(e) => setEmail(e.target.value)}
         placeholder="Your e-mail here..."
       />
-      <button>Send</button>
+      <button type="button">Send</button>
     </form>
   );
 }

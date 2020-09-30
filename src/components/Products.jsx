@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-function Products() {
+function Products(props) {
+  const scrollToElement = (ref) => {
+    ref.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    if (props.location.state.productId !== "") {
+      const id = `#${props.location.state.productId}`;
+      scrollToElement(document.querySelector(id));
+    }
+  }, [props.location.state.productId]);
+
   return (
     <div className="products-page">
       <div className="product product1" data-aos="fade-up">
-        <div className="body">
+        <div className="body" id="vranec-b">
           <h1 data-aos="fade-down">Vranec Barrique</h1>
           <p>
             Red dry wine Vintage2018. Yeast in Macedonian barrel for 4 months
@@ -18,7 +31,7 @@ function Products() {
       </div>
 
       <div className="product product2" data-aos="fade-down">
-        <div className="body">
+        <div className="body" id="temjanika">
           <h1 data-aos="fade-up">Temjanika</h1>
           <p>
             White dry wine Controled yeast- 18 days on 13-14 C Layed out in inox
@@ -31,7 +44,7 @@ function Products() {
       </div>
 
       <div className="product product3" data-aos="fade-up">
-        <div className="body">
+        <div className="body" id="chardonnay-s">
           <h1 data-aos="fade-down">Chardonnay special</h1>
           <p>
             White dry wine with intensive yellowish and green nuance Yeast in
@@ -44,7 +57,7 @@ function Products() {
       </div>
 
       <div className="product product4" data-aos="fade-down">
-        <div className="body">
+        <div className="body" id="vranec">
           <h1 data-aos="fade-up">Vranec</h1>
           <p>
             Vintage: 2019 Vranec is dry red wine with deep red color and has
@@ -57,7 +70,7 @@ function Products() {
       </div>
 
       <div className="product product5" data-aos="fade-up">
-        <div className="body">
+        <div className="body" id="cabernet-s">
           <h1 data-aos="fade-down">Cabernet Sauvignon</h1>
           <p>
             Vintage September 2019 Controlled yeast for 15 days on temperature

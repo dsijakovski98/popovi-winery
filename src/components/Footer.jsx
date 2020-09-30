@@ -76,7 +76,16 @@ function Footer() {
         </div>
         <div className="copyrights">
           <p>Copyright © Wine Cellar Popovi 2020</p>
-          <p>designed by Даниел Шијаковски</p>
+          <p>
+            designed by{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/dsijakovski98/"
+            >
+              Даниел Шијаковски
+            </a>{" "}
+          </p>
         </div>
       </div>
     </footer>

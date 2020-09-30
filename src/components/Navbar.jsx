@@ -1,4 +1,10 @@
-import React, { useEffect, useRef, useCallback, useContext } from "react";
+import React, {
+  useEffect,
+  useRef,
+  useCallback,
+  useContext,
+  useState,
+} from "react";
 import darkLogo from "../images/logo.png";
 import lightLogo from "../images/logo-light.png";
 import { MainRefContext } from "../context/MainRef";
@@ -8,7 +14,8 @@ function Navbar() {
   const location = useLocation().pathname;
   const burgerRef = useRef(null);
   const navLinksRef = useRef(null);
-  const [main, footer] = useContext(MainRefContext);
+  let [main, footer] = useContext(MainRefContext);
+  const [navLinksBg, setNavLinksBg] = useState("transparent");
 
   const animateBurgerLines = (lines) => {
     lines.forEach((line) => {
@@ -23,20 +30,36 @@ function Navbar() {
     });
   };
 
+  const setNavLinksBgColor = useCallback(() => {
+    if (
+      navLinksRef.current &&
+      navLinksRef.current.classList.contains("nav-links-active")
+    ) {
+      return location === "/popovi-winery/products" ? "#38373781" : "#b9b9b981";
+    }
+  }, [location]);
+
   const checkSimplebar = useCallback(() => {
     if (window.matchMedia("(min-width: 1150px)")) {
+      setNavLinksBg(setNavLinksBgColor());
       removeBurgerMenu();
     }
-  }, []);
+  }, [setNavLinksBgColor]);
 
   const handleBurgerClick = () => {
     navLinksRef.current.classList.toggle("nav-links-active");
+    if (navLinksRef.current.classList.contains("nav-links-active")) {
+      setNavLinksBg(setNavLinksBgColor());
+    } else {
+      setNavLinksBg("transparent");
+    }
     animateBurgerLines(burgerRef.current.children);
   };
 
   const scrollToElement = (ref) => {
     ref.scrollIntoView({
       behavior: "smooth",
+      block: "start",
     });
   };
 
@@ -73,7 +96,11 @@ function Navbar() {
       </div>
 
       {/* NAV LINKS */}
-      <div className="nav-links" ref={navLinksRef}>
+      <div
+        className="nav-links"
+        ref={navLinksRef}
+        style={{ backgroundColor: navLinksBg }}
+      >
         <div data-simplebar className="scrollbar" id="simp">
           <nav>
             <ul>
@@ -90,10 +117,21 @@ function Navbar() {
                   Home
                 </Link>
               </li>
-              <li>
+              <li
+              // style={{
+              //   display:
+              //     location === "/popovi-winery/products" ||
+              //     location === "/popovi-winery/about"
+              //       ? "none"
+              //       : "flex",
+              // }}
+              >
                 <Link
-                  to="#"
-                  onClick={() => scrollToElement(main)}
+                  to="/popovi-winery"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToElement(main);
+                  }}
                   style={{
                     color:
                       location === "/popovi-winery/products"
@@ -106,7 +144,10 @@ function Navbar() {
               </li>
               <li>
                 <Link
-                  to="/popovi-winery/products"
+                  to={{
+                    pathname: "/popovi-winery/products",
+                    state: { productId: "" },
+                  }}
                   style={{
                     color:
                       location === "/popovi-winery/products"

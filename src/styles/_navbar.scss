@@ -158,7 +158,6 @@ nav {
     top: 0px;
     width: 100vw;
     height: 105vh;
-    background-color: #72727281;
     z-index: 2;
     opacity: 1;
     transition: all 0.3s ease;
@@ -188,20 +187,25 @@ nav {
     a {
       text-align: center;
       width: 100%;
-      font-size: 1.5rem;
+      font-size: 2rem;
+      font-weight: 700;
       transition: all 0.1s ease;
       color: $lightTextCol;
 
       &:hover {
         color: inherit;
-        font-size: 1.7rem;
+        font-size: 2.2rem;
       }
     }
   }
 
   .hamburger {
+    // background: red;
+    // display: flex;
+    // place-items: center;
     display: block;
-    padding-top: 0.6em;
+    padding-top: 1em;
+    padding-right: 5px;
   }
 
   .scrollbar,
