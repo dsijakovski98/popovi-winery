@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b1258e2937a10145adb2a11ce13272d2",
+    "revision": "9347697f11897dd0533c2db9a83643a5",
     "url": "/popovi-winery/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/popovi-winery/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "565e3267a684dfc29b50",
-    "url": "/popovi-winery/static/css/main.25e8c884.chunk.css"
+    "revision": "31d16cd0aefc5d569674",
+    "url": "/popovi-winery/static/css/main.c61d4157.chunk.css"
   },
   {
     "revision": "902b860c190497d8b3c8",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/popovi-winery/static/js/2.9d842f91.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "565e3267a684dfc29b50",
-    "url": "/popovi-winery/static/js/main.1f0b24ca.chunk.js"
+    "revision": "31d16cd0aefc5d569674",
+    "url": "/popovi-winery/static/js/main.c4a1fdeb.chunk.js"
   },
   {
     "revision": "cdd0281cd861a2f4bf2a",
